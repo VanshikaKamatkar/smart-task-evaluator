@@ -1,10 +1,5 @@
-// models/Task.js
 import mongoose from "mongoose";
 
-/**
- * Task Schema
- * Stores user's coding task submission and AI evaluation results.
- */
 const taskSchema = new mongoose.Schema(
   {
     userId: {
@@ -52,7 +47,7 @@ const taskSchema = new mongoose.Schema(
     },
   },
   {
-    timestamps: true, // Adds createdAt & updatedAt automatically
+    timestamps: true, 
   }
 );
 
