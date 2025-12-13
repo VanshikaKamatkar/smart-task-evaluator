@@ -12,10 +12,7 @@ import DashboardHome from './pages/Dashboard/DashboardHome';
 import SubmitTask from './pages/Task/SubmitTask'; 
 import TaskResult from './pages/Task/TaskResult';
 import PastReports from './pages/History/PastReports';
-
-// Placeholder Pages (We will build these in upcoming phases)
-const History = () => <div className="text-center p-10">History Page Coming Soon (Phase 6.8)</div>;
-const Debugger = () => <div className="text-center p-10">AI Debugger Coming Soon (Phase 6.9)</div>;
+import AiDebugger from './pages/Dashboard/AiDebugger';
 
 function App() {
   return (
@@ -37,7 +34,7 @@ function App() {
               <Route path="result/:id" element={<TaskResult />} />
               
               <Route path="history" element={<PastReports />} />
-              <Route path="debug" element={<Debugger />} />
+              <Route path="debug" element={<AiDebugger />} />
             </Route>
           </Route>
           
