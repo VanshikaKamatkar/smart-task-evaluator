@@ -6,6 +6,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import DashboardLayout from './layouts/DashboardLayout';
 
 // Pages
+import LandingPage from './pages/LandingPage';
 import Login from './pages/Auth/Login';
 import Signup from './pages/Auth/Signup';
 import DashboardHome from './pages/Dashboard/DashboardHome';
@@ -20,7 +21,7 @@ function App() {
       <AuthProvider>
         <Routes>
           {/* Public Routes */}
-          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/" element={<LandingPage />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
 
